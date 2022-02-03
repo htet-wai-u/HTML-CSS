@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="main">
+    <header>
+        <nav class="container">
+            <h1><a href="index.html">Pizza</a></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#enquiry">Enquiry</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <h1>Great Food</h1>
+        <h2>Good Friends & Comfortable Place.</h2>
+        <button class="btn">Buy</button>
+    </section>
+    <section id="product" class="product-section pd-y container">
+        <h1 class="title"> Product</h1>
+        <figure>
+            <img src="https://picsum.photos/id/14/200/200" alt="">
+            <figcaption>Seafood Cocktail</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/id/1014/200/200" alt="">
+            <figcaption>Seafood Cocktail</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/id/1036/200/200" alt="">
+            <figcaption>Seafood Cocktail</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/id/1045/200/200" alt="">
+            <figcaption>Seafood Cocktail</figcaption>
+        </figure>
+    </section>
+    <div class="clear"></div>
+    <section id="enquiry" class="form-section pd-y ">
+        <h1 class="title">Contact Us</h1>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" >
+            <label for="message">Message:</label>
+            <textarea name="message"  cols="30" rows="10"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        &copy; 2022 Pizza. All Rights Reserved.
+    </footer>
+    <a href="#main" class="top">&uarr;</a>
+    <script>
+        window.addEventListener('scroll',function(){
+            let topBtn = document.querySelector('.top');
+            // topBtn.classList.toggle('show',scrollY>200);
+
+           
+            if(scrollY>200)
+            topBtn.classList.add('show');
+            else
+             topBtn.classList.remove('show');
+            
+          
+        })
+    </script>
+
+</body>
+</html>
